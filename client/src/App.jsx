@@ -1,4 +1,8 @@
+import { AppContext } from "./Context/AppContext";
+import { useContext } from "react";
 function App() {
+  const {storageContract} =useContext(AppContext);
+  console.log(storageContract);
   return (
     <>
       <div id="App">
