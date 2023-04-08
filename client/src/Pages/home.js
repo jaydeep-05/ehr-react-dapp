@@ -1,85 +1,28 @@
-import React from 'react'
-import { Link } from "react-router-dom";
-const home = () => {
+import React from 'react';
+import '../styles.css'
+
+
+const Home = () => {
   return (
-    <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container-fluid">
-    <Link className='navbar-brand' to='/'>EHRM</Link>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul className="navbar-nav">
-        <li className="nav-item">
-        <Link className='nav-link' to='/dashboard'>Dashboard</Link>
-        </li>
-        <li className="nav-item">
-        <Link className='nav-link' to='/list'>Record List</Link>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Doctor
-          </a>
-          <ul className="dropdown-menu">
-            <li>
-            <Link className='dropdown-item' to='/'>View Profile</Link>
-            </li>
-            <li>
-                <Link className='dropdown-item' to='/edit_doctor'>Update Profile</Link>
-            </li>
-            <li>
-                <Link className='dropdown-item' to='/make_appointment'>Make Appointment </Link>
-            </li>
-            <li>
-                <Link className='dropdown-item' to='/edit_appointment'>Update Appointment</Link>
-                
-            </li>
-          </ul>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Patient
-          </a>
-          <ul className="dropdown-menu">
-            <li>
-                <Link className='dropdown-item' to='/'>View Profile</Link>
-            </li>
-            <li>
-                <Link className='dropdown-item' to='/edit_patient'>Update Profile</Link>
-            </li>
-            <li>
-                <Link className='dropdown-item' to='/approve_doctor'>Allow Access</Link>
-                
-            </li>
-            <li>
-            <Link className='dropdown-item' to='/revoke_doctor'>Revoke Access</Link>
-            </li>
-          </ul>
-        </li>
-        <li className="nav-item dropdown">
-          <a className="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Register
-          </a>
-          <ul className="dropdown-menu">
-            <li>
-                <Link className='dropdown-item' to='/register_patient'>Patient</Link>
-                
-            </li>
-            <li>
-                <Link className='dropdown-item' to='/register_doctor'>Doctor</Link>
-               
-            </li>
-            
-          </ul>
-        </li>
-      </ul>
+    <div className="home-container">
+      <div className="jumbotron">
+        <h1>Electronic Health Record Management System</h1>
+        <h2>Using Ethereum Blockchain</h2>
+      </div>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-6">
+            <h3>How Our System Can Help You</h3>
+            <p>Our electronic health record management system provides a secure and efficient way for healthcare providers to manage patient records. By using blockchain technology, we ensure that all patient data is encrypted and tamper-proof, while also allowing for easy access and sharing of records between providers.</p>
+          </div>
+          <div className="col-md-6">
+            <h3>About Our System</h3>
+            <p>Our system is built using the latest blockchain technology to provide the highest level of security and reliability. We have a team of experienced developers and healthcare professionals working together to ensure that our system meets the needs of providers and patients alike.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</nav>
-      
-    </>
-  )
+  );
 }
 
-export default home
+export default Home;

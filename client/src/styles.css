@@ -1,0 +1,43 @@
+.home-container {
+    margin-top: 50px;
+  }
+  
+  .jumbotron {
+    background-color: #03C4A1;
+    color: white;
+    text-align: center;
+    padding: 100px 25px;
+  }
+  
+  .jumbotron h1 {
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  .jumbotron h2 {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .container-fluid {
+    margin-top: 50px;
+  }
+  
+  .col-md-6 {
+    padding: 0 50px;
+  }
+  
+  h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #707070;
+  }
+  

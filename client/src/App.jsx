@@ -2,6 +2,7 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AppContext } from "./Context/AppContext";
 import { useContext } from "react";
+import Navbar from './Pages/navbar';
 import Home from './Pages/home';
 import Dashboard from './Pages/dashboard';
 import List from './Pages/list';
@@ -18,6 +19,7 @@ function App() {
   console.log(storageContract);
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/dashboard" element={<Dashboard />}/>
@@ -30,7 +32,6 @@ function App() {
         <Route path="/revoke_doctor" element={<RevokeAccess />}/>
         <Route path="/register_patient" element={<RegisterPatient />}/>
         <Route path="/register_doctor" element={<RegisterDoctor />}/>
-        
       </Routes>
     </BrowserRouter>
   );
